@@ -1,0 +1,16 @@
+del "C:\Users\Elaine\Documents\BKL\CC93\RawData\MAP.csv"
+del "C:\Users\Elaine\Documents\BKL\CC93\RawData\PARCC.csv"
+del "C:\Users\Elaine\Documents\BKL\CC93\RawData\Students.csv"
+cd "C:\Users\Elaine\Documents\BKL\CC93\TableauFormat"
+del *.csv
+del *.tde
+cd "C:\Users\Elaine\Documents\BKL\CC93\Scripts
+python TransformPARCC.py
+python ProcessDemographics.py
+python MAP_Transform.py
+python MergePrimary.py
+python CreateSchoolExtract1.py
+python ProcessGrades.py
+python MergeSecondary.py
+::call ReplaceData.bat
+::python UploadDashboards.py
